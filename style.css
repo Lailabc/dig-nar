@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+   
+}
+.container {
+    font-family: 'Oswald', sans-serif;
+    color: rgb(168, 165, 165);
+    /* align content vertically */
+    vertical-align: baseline;
+    overflow: hidden;
+}
+.sliding-background {
+    background: url("./imgs/stars.png") repeat-x;
+    height: 560px;
+    width: 5076px;
+    animation: slide 50s linear infinite;
+  }
+  
+  @keyframes slide{
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(0, 10000px, 0);
+    }
+  }
+
+#title {
+    margin-left: auto;
+    margin-right: auto;
+    /* margin: 0; */
+    padding: 0;
+    border: 0;
+    /* choose quality of text over speed (or vice versa) */
+    text-rendering: optimizeLegibility;
+    /* Smooth the font on the level of the pixel, as opposed to the subpixel. Switching from subpixel rendering to antialiasing for light text on dark backgrounds makes it look lighter. */
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+
+    font-size: 200px;
+    text-align: justify;
+    text-transform: capitalize;
+
+}
+
+/* animation color */
+@keyframes example {
+    0% {
+        color: rgb(168, 165, 165);
+    }
+
+    100% {
+        color: rgb(8, 8, 8);
+    }
+}
+
+h2 {
+    font-size: 250px;
+    text-align: center;
+    text-transform: uppercase;
+    /* target animation set above */
+    animation-name: example;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+
+}
+
+h3 {
+    font-size: 250px;
+    text-align: justify;
+    text-transform: capitalize;
+}
+
+#thoughts {
+    width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    height: fit-content;
+}
+
+h4 {
+
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h5 {
+    font-size: 100px;
+    text-align: center;
+    margin-top: 30%;
+
+}
+
+
+
+.button-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 800px;
+    /* border: 2px solid white; */
+    position: relative;
+
+    display: block;
+
+
+}
+
+.images {
+    width: 100%;
+    display: none;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+    color: rgb(168, 165, 165);
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: rgba(174, 95, 248, 0.644);
+    box-shadow: 3px 10px 15px 12px rgba(228, 61, 205, 0.37);
+    margin-bottom: 50px;
+}
+
+p:hover {
+    transform: scale(1.5);
+
+}
+
+#text-right {
+    text-align: right;
+    font-size: 100px;
+    margin-top: 10%;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(168, 165, 165);
+}
+
+#blow {
+    margin-top: 10%;
+    text-align: right;
+    font-size: 100px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(168, 165, 165);
+}
+
+#blow:hover {
+    transform:rotate(2)
+}
+@keyframes animation{
+    0% {transform: translateX(0px);}
+    100% {transform: translateX(-50%);}
+}
+#slide-text{
+    font-size: 80px;
+    display:flex;
+    flex-direction: row;
+    white-space: nowrap;
+    animation: 3s linear 0s infinite normal none running animation;
+}
+
+#text-left{
+    font-size: 100px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+   
+
+
+#egg {
+    display: block;
+}
+
+h6 {
+    font-size: 100px;
+    text-align: center;
+    margin-top: 20%;
+
+}
