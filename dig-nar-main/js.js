@@ -11,11 +11,6 @@ const observer = new IntersectionObserver ((entries)=>{
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 
-var video = document.getElementById("egg")
-
-window.addEventListener("scroll", function() {
-    video.style.transform = "scale(1.2, 1.5)";
-});
 
 
 // const buttonContainer = document.getElementById("first")

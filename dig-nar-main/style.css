@@ -74,7 +74,7 @@ h1 {
 
 h2 {
     font-size: 250px;
-    text-align: justify;
+    text-align: center;
     text-transform: uppercase;
     /* target animation set above */
     animation-name: example;
@@ -99,51 +99,68 @@ h3 {
 
 h4 {
 
-    font-size: 50px;
+    font-size: 200px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20%;
+    margin-bottom: 20%;
 }
 
 h5 {
     font-size: 100px;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 10%;
     margin-bottom: 20%;
 
 }
 
-
-
-.button-container {
+.video-container{
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
-    height: 800px;
-    /* border: 2px solid white; */
     position: relative;
-    display: block;
-    
-
-
+    left: auto;
+    top: auto;
+   background-color: rgb(42, 13, 70);
+   height: 1000px;
 }
 
 .images {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    display: none;
+
+    width: 50%;
+    transform-origin: 0, 0;
+    background-color: rgb(42, 13, 70);
 }
 
-p {
-    font-family: 'Oswald', sans-serif;
-    color: rgb(168, 165, 165);
-    font-size: 20px;
-    border-radius: 30px;
-    background-color: rgba(174, 95, 248, 0.644);
-    box-shadow: 3px 10px 15px 12px rgba(228, 61, 205, 0.37);
-    margin-bottom: 50px;
-    display: none;
+.gif-blow{
+    border:solid blueviolet;
+    display: none;  
+    width: 100%;
+      
 }
+
+.blowing {
+    color: black;
+    margin-left: 20px;
+    margin-right: 30px;
+    font-size: 100px;
+    border-radius: 10px;
+    border:solid blueviolet;
+    background-color: rgb(168, 165, 165);
+   
+}
+
+.blowing:hover {
+   transform: scale(1.09);
+  display: block;
+
+}
+#trans-border{
+    border: 1px solid black;
+    height: 400px;
+    width: 500px;
+    margin-left: 25%;
+}
+
 
 #text-right {
     text-align: right;
@@ -152,36 +169,32 @@ p {
     font-family: 'Oswald', sans-serif;
     color: rgb(168, 165, 165);
 }
-
+ 
 #blow {
     margin-top: 10%;
-    text-align: right;
     font-size: 100px;
-    font-family: 'Oswald', sans-serif;
-    color: rgb(168, 165, 165);
+    display: flex;
+    flex-direction: row;
 }
 
-#blow:hover {
-    transform:rotate(2)
-}
+/* animation slide text horizontal */
 @keyframes animation{
     0% {transform: translateX(0px);}
-    100% {transform: translateX(-50%);}
+    100% {transform: translateX(-100%);}
 }
 #slide-text{
-    font-size: 80px;
+    font-size: 200px;
     display:flex;
     flex-direction: row;
     white-space: nowrap;
+    transition: all;
     animation: 3s linear 0s infinite normal none running animation;
+    text-transform: uppercase;
+    animation-duration: 30s;
+  
 }
 
-#text-left{
-    font-size: 100px;
-    text-align: center;
-    margin-top: 20px;
 
-}
 .images:hover{
     animation: melting 3s ease  infinite normal none running;
 }
@@ -196,6 +209,8 @@ p {
 
 #egg {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h6 {
